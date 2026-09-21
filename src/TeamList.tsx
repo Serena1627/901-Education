@@ -36,15 +36,13 @@ export default function TeamList({ teams, attributes, dispatch }: TeamListProps)
 
   return (
     <div>
-      <p style={{ fontWeight: 600, marginBottom: '12px' }}>
+      <p style={{ marginTop: '12px', fontWeight: 800, marginBottom: '12px' }}>
         Selected: {selectedTeam ? selectedTeam.teamName : 'none'}
       </p>
 
-      {selectedTeamId ? (
-        <p style={{ marginBottom: '12px' }}>{statusMessage}</p>
-      ) : (
-        <p style={{ marginBottom: '12px' }}>Selected: none</p>
-      )}
+      {selectedTeamId && (
+          <p style={{ marginTop: '12px', marginBottom: '12px' }}>{statusMessage}</p>
+    )}
 
       {teams.map((team) => (
         <TeamCard

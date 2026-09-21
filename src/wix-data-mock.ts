@@ -16,7 +16,7 @@ const mockTeams: Record<string, TeamRow> = {
     _id: '2',
     teamName: 'The Falcons',
     school: 'Lakeview Academy',
-    approved: true,
+    approved: false,
   },
   '3': {
     _id: '3',
@@ -28,7 +28,7 @@ const mockTeams: Record<string, TeamRow> = {
     _id: '4',
     teamName: 'The Storm',
     school: 'Maple Grove School',
-    approved: true,
+    approved: false,
   },
   '5': {
     _id: '5',
